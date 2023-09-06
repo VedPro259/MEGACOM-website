@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MEGACOM | Our Services | Alberta</title>
+    <!--copy and paste-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;500;600&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/header-and-general.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/heading-below-nav.css">
+
+    <style>
+      .display-it{
+        display: flex; 
+      }
+
+      .section-one,
+      .section-two{
+        flex: 1; 
+        padding: 35px 45px 35px 45px; 
+      }
+
+      .section-one,
+      .section-two,
+      .proud,
+      .one,
+      .contact-to-learn,
+      .our-services,
+      .the-heading,
+      .please-contact-us,
+      .love-to,
+      .style-it,
+      .the-description{
+        font-family: 'Poppins', sans-serif;
+      }
+
+
+      .section-one{
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        font-weight: bold; 
+        font-size: 30px; 
+        
+      }
+
+      .section-two{
+        background-color: lightgrey; 
+        font-weight: lighter; 
+        font-size: 17px; 
+      }
+
+      .proud{
+        font-weight: bolder; 
+        font-size: 30px; 
+        padding-top: 30px; 
+        padding-bottom: 30px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        border-bottom: 1px solid rgb(129, 129, 129); 
+        border-top: 1px solid rgb(129, 129, 129); 
+        margin-left: 60px; 
+        margin-right: 60px; 
+      }
+
+      .third-area{
+        display: flex; 
+      }
+
+      .one,
+      .two{
+        flex: 1; 
+        padding-top: 35px; 
+        padding-bottom: 35px; 
+      }
+
+      .one{
+        font-weight: lighter; 
+        font-size: 17px; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+      }
+
+      .two{
+        background-color: lightgrey; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+      }
+
+      .contact-to-learn{
+        font-size: 16px; 
+        background-color: red; 
+        color: white; 
+        padding: 7px 10px 7px 10px; 
+        border-style: none; 
+        transition: background-color 0.2s; 
+        cursor: pointer; 
+        margin-top: 20px; 
+      }
+
+      .contact-to-learn:hover{
+        background-color: darkslategrey;
+      }
+
+      .need-sum{
+        padding-left: 50px; 
+        padding-right: 50px; 
+      }
+
+      .fourth-area{
+        background-color: rgb(90, 90, 90); 
+      }
+
+      .our-services{
+        color: white; 
+        text-align: center; 
+        font-size: 30px; 
+        font-weight: bold; 
+        padding-top: 30px; 
+      }
+
+      .the-heading{
+        font-weight: bold; 
+        font-size: 25px; 
+        color: white; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        background-color: rgb(214, 0, 0); 
+        margin-bottom: 0;
+        height: 20%; 
+        text-align: center; 
+        padding-left: 10px; 
+        padding-right: 10px; 
+      }
+
+      .the-description{
+        color: black; 
+        background-color: white; 
+        height: 80%; 
+        display: flex; 
+        flex-direction: column; 
+        padding-left: 10px; 
+        padding-right: 10px; 
+        font-weight: lighter; 
+        
+      }
+      
+      .scrolling-attempt{
+        display: grid;
+        position: relative; 
+        grid-auto-flow: column;
+        grid-auto-columns: 400px; 
+        overflow-x: scroll;
+        scroll-snap-type:
+          x mandatory; 
+        margin-top: 30px; 
+        box-shadow: inset 0 20px 25px rgba(0,0,0,.35), 
+        inset 0 -20px 25px rgba(0,0,0,.35);
+        padding-left: 20px; 
+        background-image: url("images/amine.webp");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .one-box{
+        width: 310px; 
+        box-shadow: 10px 0 5px rgba(0,0,0,.15); 
+        height: 450px; 
+        border: 2px solid rgb(31, 46, 46);
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+        z-index: 1; 
+      }
+      
+      .overlay-again{
+        position: absolute; 
+        top: 0; 
+        bottom: 0; 
+        width: 5220px; 
+        background-color: rgba(0,0,0,0.35); 
+      }
+
+      .last-section{
+        margin-top: 30px; 
+        border-bottom: 1px solid darkgrey; 
+        margin-left: 30px; 
+        margin-right: 30px; 
+      }
+
+      .please-contact-us{
+        font-size: 30px; 
+        font-weight: bold; 
+        text-align: center; 
+      }
+
+      .love-to{
+        font-size: 17px; 
+        font-weight: lighter; 
+        text-align: center; 
+        margin-top: 30px; 
+        padding-left: 75px; 
+        padding-right: 75px; 
+      }
+
+      .center-button{
+        display: flex; 
+        justify-content: center; 
+        margin-top: 30px; 
+        margin-bottom: 30px; 
+      }
+
+      .style-it{
+        font-size: 16px; 
+        font-weight: lighter; 
+        background-color: red; 
+        color: white; 
+        padding: 10px 8px 10px 8px; 
+        border-style: none; 
+        cursor: pointer;
+        transition: background-color 0.25s;
+      }
+
+      .style-it:hover{
+        background-color: darkslategrey;
+      }
+
+      @media (max-width: 1004px){
+        .display-it{
+          flex-direction: column;
+        }
+
+        .third-area{
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="header">
+      <div class="redirect">
+        <a href="index.html">
+          <img class="megacom-logo" src="images/megacom_logo.jpg">
+        </a>
+      </div>
+      <div class="select-one">
+        <div class="tooltip-activate">
+          <img src="images/burger_menu.png" class="menu-above-tooltip">   
+          <div class="each-tooltip-section">   
+            <a class="home-tooltip" href="index.html">Home</a>
+            <a class="about-us-tooltip" href="about_us.html">About Us</a>
+            <a class="services-tooltip" href="services.html">Services</a>
+            <a class="contact-us-tooltip" href="contact-us.html">Contact Us</a>
+          </div>
+        </div>
+        <a class="home" href="index.html">Home</a>
+        <a class="about-us" href="about_us.html">About Us</a>
+        <a class="services" href="services.html">Services</a>
+        <a class="contact-us" href="contact-us.html">Contact Us</a>
+      </div>
+    </nav>
+
+    <script src="js-code/toggle-menu.js"></script>
+
+    <section class="page-services">
+      <div class="overlay"></div>
+      <img class="telecom-tower" src="images/telecom_tower.avif">
+      <div class="the-services">
+        Services
+      </div>
+    </section>
+
+    <section class="display-it">
+      <div class="section-one">
+        Leader in Remote Communications in Alberta, Canada
+      </div>
+      <div class="section-two">
+        <p>Having a fast and reliable connection will allow your company to optimize the performance of your company and will increase the overall efficiencies of your work. It will also help you connect with clients from around the world without service interruptions.</p>
+        <p>We understand that reliable connectivity is a critical part of the operations of your company, so we are providing various services to keep you connected.</p>
+      </div>
+    </section>
+
+    <section class="proud">MEGACOM is proud to partner with CR Digital.</section>
+
+    <section class="third-area">
+      <div class="one">
+        <p class="need-sum">CR Digital is a digital technology business specializing in the development of mining technology software and services.</p>
+        <p class="need-sum">Shaping global mining through innovative technology solutions and collaborative partnerships towards a safer, more productive, and sustainable future.</p>
+      </div>
+      <div class="two">
+        <img src="images/cr_digital.jpg">
+        <a href="contact-us.html"><button class="contact-to-learn">Contact Us to Learn More</button></a>
+      </div>
+    </section>
+
+    <section class="fourth-area">
+      <div class="our-services">Our Services</div>
+      <div class="scrolling-attempt">
+        <div class="overlay-again"></div>
+        <div class="one-box">
+          <div class="the-heading">
+            <p>Network Cabling</p>
+          </div>
+          <div class="the-description">
+            <p>Structured cabling is one of the most trustworthy, and easy to use solutions for interoffice communication. We offer services to design and build your structured cabling equipment from the ground up, customizing it to fit your needs perfectly.</p>
+          </div>
+        </div>
+
+        <div class="one-box">
+          <div class="the-heading">
+            <p>Network Troubleshooting</p>
+          </div>
+          <div class="the-description">
+            <p>If your network is not performing to your satisfaction, we can help. Our technicians will troubleshoot, diagnose, and resolve your issues in a timely manner.</p>
+          </div>
+        </div>
+
+        <div class="one-box">
+          <div class="the-heading">
+            <p>Fiber Optic Installation & Repair</p>
+          </div>
+          <div class="the-description">
+            <p>Fiber optic cabling is, bar none, one of the best communication solutions available for long-range transmission. We provide all types of design, installation, and maintenance services for your fiber optic needs.</p>
+          </div>
+        </div>
+
+        <div class="one-box">
+          <div class="the-heading">
+            <p>Radio Towers</p>
+          </div>
+          <div class="the-description">
+            <p>Our team has the knowledge and ability to help with your all-important radio towers. Whether your antennas are down, need to be upgraded, or redesigned entirely, MEGACOM can do it.</p>
+          </div>
+        </div>
+
+        <div class="one-box">
+          <div class="the-heading">
+            <p>Point of Sales (POS) Systems</p>
+          </div>
+          <div class="the-description">
+            <p>Advanced POS systems can give your business, no matter how new or established, the flexibility and scalability it needs to pick up steam and roll past the competition. Advanced POS systems are a must-have for any business&#39; operation that deals directly with the customer.</p>
+            <p>We can provide your business with a state of the art POS system to help your business grow.</p>
+          </div>
+        </div>
+
+        <div class="one-box">
+          <div class="the-heading">
+            <p>Security Systems</p>
+          </div>
+          <div class="the-description">
+            <p>Every business, no matter how big or small, needs a proper security system. We provide all kinds of security systems for all types of needs &ndash; whether for theft, hazardous conditions&sol;materials, confidential information, or guest access, we can ensure that your business is absolutely secured 24&sol;7.</p>
+          </div>
+        </div>
+
+        <div class="one-box">
+          <div class="the-heading">
+            <p>Commercial Wi-Fi</p>
+          </div>
+          <div class="the-description">
+            <p>Wi-Fi has become the standard for home and business internet because of the freedom it provides. Any business can utilize Wi-Fi to their advantage as a tool for person-to-person or B2B communication, but it has also developed into an essential method for M2M communication as well.</p>
+            <p>Our team can design, install, maintain, and repair the Wi-Fi setup of your dreams.</p>
+          </div>
+        </div>
+
+        <div class="one-box">
+          <div class="the-heading">
+            <p>Internet, TV &amp; Phone</p>
+          </div>
+          <div class="the-description">
+            <p>If your business has nothing else, it needs reliable internet, TV, and phone solutions. These traditional solutions have stood the test of time as a means to communicate with your clients, your customers, and your business partners.</p>
+            <p>We can design and set up these services for your business and are even well-versed in more advanced services, such as VoIP.</p>
+          </div>
+        </div>
+
+        <div class="one-box">
+          <div class="the-heading">
+            <p>Communication Consulting</p>
+          </div>
+          <div class="the-description">
+            <p>We don&#39;t believe in fitting your business to a stock solution. For that reason, we provide our customers with an initial consultation. During this meeting, we will discuss your business, its size, and your goals for the future.</p>
+            <p>After assessing your needs, we do an on-site survey of the facility to determine the best course of action to take in regards to your specific circumstances.</p>
+          </div>
+        </div>
+
+        <div class="one-box">
+          <div class="the-heading">
+            <p>Design</p>
+          </div>
+          <div class="the-description">
+            <p>When we say that our specialists will build your system from the ground up, we mean that they start from the very beginning: the design. After the on-site survey, our team takes to the drawing board and works to provide your business the best, most cost-effective, efficient, and scalable solutions for you and your team.</p>
+          </div>
+        </div>
+
+        <div class="one-box">
+          <div class="the-heading">
+            <p>Installation</p>
+          </div>
+          <div class="the-description">
+            <p>Once we&#39;re finished designing your customized systems, we put everything in place for you. We install every system, make sure all of them are fully operational, and give you any advice you may need on the functionality of the system.</p>
+            <p>We&#39;re proud to say that our systems are all turnkey solutions that are designed to your specifications.</p>
+          </div>
+        </div>
+
+        <div class="one-box">
+          <div class="the-heading">
+            <p>Maintenance &amp; Repair</p>
+          </div>
+          <div class="the-description">
+            <p>Our technicians are more than happy to conduct any maintenance or repair services necessary to keep your business up and running. From changing wires to rerouting entire systems, our team can help with any system issues that may arise in the future.</p>
+          </div>
+        </div>
+
+        <div class="one-box">
+          <div class="the-heading">
+            <p>Upgrading</p>
+          </div>
+          <div class="the-description">
+            <p>At MEGACOM, we strive to stay ahead of the curve. We only provide the best technology available for the systems we install. That being said, we know the world of technology is changing at a breakneck pace.</p>
+            <p>We can help you keep up by designing and implementing plug-and-play systems that work seamlessly with any previously installed systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="last-section">
+      <div class="please-contact-us">Contact Us</div>
+      <div class="love-to">We would love to hear from you to discuss an initial consultation. If you have any questions or would like to receive a quote, feel free to fill out our online form, stop by our Fort McMurray, AB office, or call us at (780) 804-6342.</div>
+      <div class="center-button"><a href="contact-us.html"><button class="style-it">Schedule a Consultation</button></a></div>
+    </section>
+
+    <footer class="everything-contact">
+      <div class="contact-info">
+        <div class="contact-first-section">
+          <div class="all-location">
+            <img class="icon" src="images/geo-location-icon.jpg">
+            <div class="des-for-contact">
+              <a class="icon-info">10&ndash;235 Macalpine Cres</a>
+              <a class="icon-info">Fort McMurray, AB</a>
+            </div>
+          </div>
+          <div class="all-phone">
+            <img class="icon" src="images/phone-512.webp">
+            <a class="icon-info">(780) 804&ndash;6342</a>
+          </div>          
+        </div>
+        <div class="contact-second-section">
+          <div class="all-email">
+            <img class="icon" src="images/email-and-mail-icon-black-free-png.png">
+            <p class="icon-info">info@megacom.ca</p>
+          </div>
+          <div class="all-clock">
+            <img class="icon" src="images/281668.png">
+            <a class="icon-info">24/7</a>
+          </div>          
+        </div>
+      </div>
+    </footer>
+
+    <footer class="hyperlinks">
+      <div><img class="resize" src="images/megacom_logo.jpg"></div>
+      <div>
+        <a href="https://ca.linkedin.com/company/mega-communications-solutions?trk=similar-pages" target="_blank"><img class="linkedin" src="images/linkedin.png"></a>
+        <a class="utube-container" href="https://www.youtube.com/channel/UCQH0EssBNKNNdZ9hAn8bDHQ" target="_blank"><img class="utube" src="images/youtube.png"></a>
+      </div>
+
+    </footer>
+
+    <footer class="rights-reserved">
+      &#169; 2023, MEGACOM. All Rights Reserved.
+    </footer>
+  </body>
+</html>

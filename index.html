@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MEGACOM | Communications Infrastructure | Alberta</title>
+    <!--copy and paste-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;500;600&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/header-and-general.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <style>
+      .dude-typing-lmao{
+        height: 520px; 
+        position: relative; 
+        left: 0; 
+        right: 0; 
+      }
+
+      .background-typing{
+        height: 100%; 
+        width: 100%;
+        object-fit: cover;
+        object-position: middle; 
+      }
+
+      .leading-title{
+        font-weight: bold; 
+        color: white; 
+        font-size: 33px; 
+        max-width: 605px; 
+      }
+
+      .leading-title,
+      .leading-description,
+      .contact-us-button,
+      .fiber-optics,
+      .leading-optics,
+      .multi-purpose,
+      .fourth-section,
+      .fifth-section,
+      .learn-more{
+        font-family: 'Poppins', sans-serif; 
+      }
+
+
+      .leading-description{
+        font-weight: lighter; 
+        color: white; 
+        font-size: 20px; 
+      }
+      .contact-us-button{
+        font-weight: lighter; 
+        background-color: red; 
+        color: white; 
+        padding: 10px 15px 10px 15px; 
+        border-style: none; 
+        cursor: pointer; 
+        transition: background-color 0.2s; 
+        font-size: 17px; 
+      }
+
+      .contact-us-button:hover{
+        background-color: darkslategrey; 
+      }
+
+      .leading{
+        position: absolute; 
+        top: 15%;
+        left: 120px;  
+      }
+
+      .overlay{
+        width: 100%; 
+        height: 100%;
+        background-color: rgba(0,0,0,0.5); 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+      }
+
+      .second-section{
+        display: flex; 
+      }
+
+      .fiber-optics,
+      .leading-optics{
+        width: 100%; 
+      }
+
+      .leading-optics{
+        background-color: rgb(235, 235, 235); 
+        font-size: 18px; 
+        font-weight: lighter; 
+        padding: 60px 60px 60px 60px; 
+      }
+
+      .fiber-optics{
+        font-size: 30px; 
+        font-weight: bold; 
+        padding: 60px 60px 60px 60px; 
+      }
+
+      .third-section{
+        display: flex; 
+      }
+
+      .bro-doing-optics,
+      .multi-purpose{
+        width: 100%; 
+
+      }
+
+      .bro-doing-optics{
+        height: 650px;
+      }
+
+      .technician{
+        width: 100%;
+        height: 100%; 
+        object-fit: cover; 
+        object-position: left; 
+      }
+
+      .multi-purpose{
+        background-color: rgb(61, 61, 61); 
+        color: white; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+      }
+
+      .multi-purpose-title{
+        font-weight: bold; 
+        font-size: 30px; 
+        padding-left: 60px; 
+        padding-right: 60px; 
+      }
+
+      .multi-paragraph-one,
+      .multi-paragraph-two{
+        font-size: 17px; 
+        font-weight: lighter; 
+        padding-left: 60px;
+        padding-right: 60px; 
+      }
+
+      .fourth-section{
+        display: flex; 
+        justify-content: center; 
+        margin-top: 50px;  
+      }
+
+      .installation,
+      .partners,
+      .maintenance{
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        width: 320px; 
+        height: 240px; 
+        line-height: 26px; 
+      }
+
+      .installation{
+        margin-right: 5px; 
+      }
+
+      .maintenance{
+        margin-left: 5px; 
+        margin-right: 5px; 
+      }
+      .partners{
+        margin-left: 5px; 
+        
+      }
+      .bro-installing,
+      .bro-maintaining,
+      .bro-the-partner{
+        width: 320px;
+        height: 240px; 
+      }
+
+      .the-image{
+        width: 100%;
+        height: 100%; 
+        object-fit: cover; 
+        object-position: center; 
+      }
+
+      .installation-title,
+      .maintenance-title,
+      .partner-title{
+        font-weight: bold; 
+        font-size: 30px; 
+      }
+
+      .installation-description,
+      .maintenance-description,
+      .partner-description{
+        color: rgb(0, 0, 0);
+        font-weight: lighter; 
+      }
+
+      .fifth-section{
+        padding-top: 30px;
+        padding-bottom: 30px; 
+        margin-top: 300px; 
+        display: flex; 
+        background-color:rgb(61, 61, 61); 
+        color: white;
+        align-items: center; 
+        justify-content: center; 
+      }
+
+      .specialists-title{
+        font-weight: bold; 
+        font-size: 30px; 
+      }
+
+      .specialists-description{
+        font-size: 17px; 
+        font-weight: lighter; 
+      }
+
+      .learn-more{
+        background-color: red; 
+        color: white;
+        border-style: none; 
+        padding: 10px 17px 10px 17px; 
+        font-size: 16px; 
+        cursor: pointer; 
+        transition: background-color 0.2s, color 0.2s; 
+      }
+
+      .learn-more:hover{
+        background-color: white; 
+        color: black; 
+      }
+      
+      .optics-container{
+        height: 350px; 
+      }
+
+      .optics-image{
+        height: 100%;
+        margin-right: 70px; 
+        object-fit: cover; 
+        object-position: cover; 
+      }
+
+      .specialists{
+        margin-left: 70px; 
+        margin-right: 70px;
+        margin-bottom: 40px; 
+      }
+      
+      /*everything that happens when your browser shrinks*/
+      @media (max-width: 1004px){
+        .leading{
+          top: 0;
+          left: 0; 
+          width: 100%; 
+          height: 100%; 
+          text-align: center; 
+          display: flex; 
+          flex-direction: column; 
+          align-items: center; 
+          justify-content: center;
+        }
+
+        .second-section{
+          flex-direction: column !important; 
+          overflow: hidden;  
+        }
+
+        .leading-optics{
+          padding: 0; 
+          text-align: center; 
+          padding-top: 30px !important;
+          padding-bottom: 30px !important; 
+        }
+
+        .leading-title,
+        .leading-description{
+          padding-left: 20px !important; 
+          padding-right: 20px !important; 
+        }
+
+        .leading-title{
+          font-size: 25px; 
+        }
+
+        .leading-description{
+          font-size: 20px; 
+        }
+
+        .third-section{
+          flex-direction: column; 
+        }
+
+        .multi-paragraph-two{
+          padding-bottom: 21px; 
+        }
+
+        .fourth-section{
+          flex-direction: column; 
+          margin-top: 0; 
+          align-items: center; 
+        }
+        
+        .fiber-optics{
+          text-align: center; 
+          padding-left: 0; 
+        }
+
+        .maintenance,
+        .partners{
+          margin-top: 276px; 
+        }
+
+        .installation{
+          margin-top: 25px; 
+        }
+
+        .bro-doing-optics{
+          height: 400px;
+        }
+
+        .fifth-section{
+          flex-direction: column; 
+        }
+
+        .specialists{
+          display: flex; 
+          flex-direction: column; 
+          align-items: center; 
+          text-align: center; 
+        }
+
+        .specialists-description{
+          margin-top: -10px; 
+        }
+
+        .optics-container{
+          height: 300px; 
+        }
+
+        .optics-image{
+          margin-right: 0;
+          margin-left: 0; 
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="header">
+      <div class="redirect">
+        <a href="index.html">
+          <img class="megacom-logo" src="images/megacom_logo.jpg">
+        </a>
+      </div>
+      <div class="select-one">
+        <div class="tooltip-activate">
+          <img src="images/burger_menu.png" class="menu-above-tooltip">   
+          <div class="each-tooltip-section">   
+            <a class="home-tooltip" href="index.html">Home</a>
+            <a class="about-us-tooltip" href="about_us.html">About Us</a>
+            <a class="services-tooltip" href="services.html">Services</a>
+            <a class="contact-us-tooltip" href="contact-us.html">Contact Us</a>
+          </div>
+        </div>
+        <a class="home" href="index.html">Home</a>
+        <a class="about-us" href="about_us.html">About Us</a>
+        <a class="services" href="services.html">Services</a>
+        <a class="contact-us" href="contact-us.html">Contact Us</a>
+      </div>
+    </nav>
+
+    <script src="js-code/toggle-menu.js"></script>
+
+    <section class="dude-typing-lmao">
+      <img class="background-typing" src="images/world-typing-day.jpg">
+      <div class="overlay"></div>
+      <div class="leading">
+        <p class="leading-title">Leading Network & Communications Infrastructure Specialists in Alberta, Canada</p>
+        <p class="leading-description">We use state-of-the-art tools and technology to install communications infrastructure.</p>
+        <a href="contact-us.html"><button class="contact-us-button">Contact Us</button></a>
+        
+      </div>
+    </section>
+
+    <section class="second-section">
+      <div class="fiber-optics">Fiber-Optic Construction Company in Alberta, CA</div>
+      <div class="leading-optics">MEGACOM is a leading fiber-optic network construction services company, located in Alberta, Canada. Since 2011, we have been delivering exceptional splicing services to customers across Canada.</div>
+    </section>
+
+    <section class="third-section">
+      <div class="bro-doing-optics"><img class="technician" src="images/fiber-optic-technician.jpg"></div>
+      <div class="multi-purpose">
+        <p class="multi-purpose-title">Multi-Purpose Communications</p>
+        <p class="multi-paragraph-one">We are a multi&ndash;purpose communications business with years of experience working in Canada&#39;s Oil Sands and managing the conditions that come with working in the greater Fort McMurray area.</p>
+        <p class="multi-paragraph-two">With a wide array of specialties ranging from fiber optic repair, data center cabling to wireless radio towers, and consulting, there&#39;s no job MEGACOM is not equipped to tackle in Northern Alberta.</p>
+      </div>
+    </section>
+
+    <section class="fourth-section"> 
+      <div class="installation">
+        <div class="bro-installing"><img class="the-image" src="images/02.jpg"></div>
+        <div class="installation-info">
+          <p class="installation-title">Installation</p>
+          <p class="installation-description">Our Technicians, with over 30 years of combined experience, will install the communications infrastructure the correct way the first time, using state-of-the-art tools and training, and for the best price.</p>
+        </div>
+      </div>
+      <div class="maintenance">
+        <div class="bro-maintaining"><img class="the-image" src="images/03.jpg"></div>
+        <div class="maintenance-info">
+          <p class="maintenance-title">Maintenance</p>
+          <p class="maintenance-description">Once the infrastructure has been installed, our experienced technicians can also complete scheduled maintenance, ensuring the equipment is in the best operational condition possible.</p>
+        </div>
+      </div>
+      <div class="partners">
+        <div class="bro-the-partner"><img class="the-image" src="images/CR-Digital-Titan.jpg"></div>
+        <div class="partner-info">
+          <p class="partner-title">CR Digital</p>
+          <p class="partner-description">We are an authorized partner of CR Digital, a digital technology business, specializing in the development of mining technology software and services, with a focus on a safer, more productive, and sustainable future.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="fifth-section">
+      <div class="specialists">
+        <p class="specialists-title">Design, Consultation &amp; Fiber Optic Specialists</p>
+        <p class="specialists-description">At MEGACOM, we are the leading network infrastructure design consultants in the region, and we will ensure that your network is optimized to the highest standard using our expert knowledge. We have over 30 years of experience in the installation and maintenance of communications equipment for residential, industrial and commercial companies all over Alberta</p>
+        <a href="services.html"><button class="learn-more">Learn More</button></a>
+      </div>
+
+      <div class="optics-container">
+        <img class="optics-image" src="images/04.jpg">
+      </div>
+    </section>
+
+    <footer class="everything-contact">
+      <div class="contact-title">Contact Us</div>
+      <div class="contact-info">
+        <div class="contact-first-section">
+          <div class="all-location">
+            <img class="icon" src="images/geo-location-icon.jpg">
+            <div class="des-for-contact">
+              <a class="icon-info">10&ndash;235 Macalpine Cres</a>
+              <a class="icon-info">Fort McMurray, AB</a>
+            </div>
+          </div>
+          <div class="all-phone">
+            <img class="icon" src="images/phone-512.webp">
+            <a class="icon-info">(780) 804&ndash;6342</a>
+          </div>          
+        </div>
+        <div class="contact-second-section">
+          <div class="all-email">
+            <img class="icon" src="images/email-and-mail-icon-black-free-png.png">
+            <p class="icon-info">info@megacom.ca</p>
+          </div>
+          <div class="all-clock">
+            <img class="icon" src="images/281668.png">
+            <a class="icon-info">24/7</a>
+          </div>          
+        </div>
+      </div>
+    </footer>
+
+    <footer class="hyperlinks">
+      <div><img class="resize" src="images/megacom_logo.jpg"></div>
+      <div>
+        <a href="https://ca.linkedin.com/company/mega-communications-solutions?trk=similar-pages" target="_blank"><img class="linkedin" src="images/linkedin.png"></a>
+        <a class="utube-container" href="https://www.youtube.com/channel/UCQH0EssBNKNNdZ9hAn8bDHQ" target="_blank"><img class="utube" src="images/youtube.png"></a>
+      </div>
+
+    </footer>
+
+    <footer class="rights-reserved">
+      &#169; 2023, MEGACOM. All Rights Reserved.
+    </footer>
+
+  </body>
+</html>

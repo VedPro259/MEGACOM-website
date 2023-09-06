@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MEGACOM | Contact Us | Alberta</title>
+    <!--copy and paste-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;500;600&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/header-and-general.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/heading-below-nav.css">
+
+    <style>
+      .in-touch{
+        font-size: 30px; 
+        font-weight: bold; 
+        text-align: center; 
+        padding-top: 45px; 
+        padding-bottom: 45px; 
+        border-bottom: 1px solid lightgrey; 
+      }
+
+      .in-touch,
+      .all-input,
+      .all-input textarea,
+      .all-input input,
+      .submit{
+        font-family: 'Poppins', sans-serif; 
+      }
+
+      .all-input{
+        background-color: lightgrey; 
+        margin-left: 75px; 
+        margin-right: 75px; 
+        margin-top: 50px; 
+        display: flex; 
+        flex-direction: column; 
+        padding-left: 40px; 
+        box-shadow: 10px 10px 12px rgba(0,0,0,0.1); 
+        min-width: 280px; 
+      }
+
+      .all-input label{
+        font-weight: bold; 
+        display: block; 
+        margin-bottom: 12px; 
+      }
+
+      .make-it-red{
+        color: darkred; 
+      }
+
+      .name-input{
+        padding-top: 20px; 
+      }
+
+      .message-input{
+        padding-bottom: 20px; 
+        
+      }
+      
+      .enter-name{
+        width: 250px; 
+      }
+      .enter-message{
+        width: 270px; 
+      }
+
+      .hi,
+      .hello{
+        width: 250px; 
+      }
+
+      .all-input input{
+        padding-bottom: 4px; 
+      }
+
+      .all-input textarea,
+      .all-input input{
+        font-size: 17px; 
+        font-weight: lighter; 
+        resize: none; 
+        padding-left: 7px; 
+        padding-top: 7px; 
+        border-radius: 2px; 
+        border: 2px solid grey; 
+        outline: none; 
+        transition: border-color 0.4s; 
+        margin-bottom: 12px; 
+        padding-right: 4px; 
+      }
+
+      .all-input textarea:focus,
+      .all-input input:focus{
+        border-color: rgb(24, 24, 24); 
+      }
+
+      .submit{
+        padding: 7px 17px 7px 17px; 
+        font-size: 17px; 
+        margin-top: 10px; 
+        cursor: pointer; 
+        background-color: red; 
+        color: white; 
+        border-style: none;  
+        transition: background-color 0.2s, color 0.2s; 
+        margin-bottom: 30px; 
+      }
+
+      .submit:hover{
+        background-color: darkslategrey; 
+        color: white; 
+      }
+
+      .visibility{
+        color: darkred; 
+        opacity: 0; 
+      }
+
+      .all-input .icon-info{
+        margin-top: 0 !important; 
+      }
+
+      @media (max-width: 1004px){
+        .all-input{
+          align-items: center;
+          padding-left: 0; 
+        }
+
+        .message-input{
+          padding-left: 17px; 
+        }  
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="header">
+      <div class="redirect">
+        <a href="index.html">
+          <img class="megacom-logo" src="images/megacom_logo.jpg">
+        </a>
+      </div>
+      <div class="select-one">
+        <div class="tooltip-activate">
+          <img src="images/burger_menu.png" class="menu-above-tooltip">   
+          <div class="each-tooltip-section">   
+            <a class="home-tooltip" href="index.html">Home</a>
+            <a class="about-us-tooltip" href="about_us.html">About Us</a>
+            <a class="services-tooltip" href="services.html">Services</a>
+            <a class="contact-us-tooltip" href="contact-us.html">Contact Us</a>
+          </div>
+        </div>
+        <a class="home" href="index.html">Home</a>
+        <a class="about-us" href="about_us.html">About Us</a>
+        <a class="services" href="services.html">Services</a>
+        <a class="contact-us" href="contact-us.html">Contact Us</a>
+      </div>
+    </nav>
+
+    <script src="js-code/toggle-menu.js"></script>
+
+    <section class="page-services">
+      <div class="overlay"></div>
+      <img class="telecom-tower" src="images/telecom_tower.avif">
+      <div class="the-services">
+        Contact Us
+      </div>
+    </section>
+
+    <section class="in-touch">
+      Get in Touch
+    </section>
+
+    <form class="all-input" action="https://formsubmit.co/ved.bhowmik@gmail.com" method="POST">
+      <div class="name-input">
+        <label>Name <span class="make-it-red">&ast;</span></label>
+        <textarea name="name" rows="1" onInput="auto_height(this)" class="enter-name" required></textarea>
+      </div>
+      <div class="fifty">
+        <label>Email <span class="make-it-red">&ast;</span><span class="visibility"> Must contain an &#64;</span></label>
+        <textarea name="email" rows="1" onInput="auto_height(this)" class="hello" required></textarea>
+      </div>
+     <div class="fifty">
+        <label>Phone <span class="make-it-red">&ast;</span></label>
+        <input name="phone" placeholder="(&#95;&#95;&#95;) &#95;&#95;&#95;&ndash;&#95;&#95;&#95;&#95;" id="phone" onInput="this.value = phoneFormat(this.value)" class="hi" required>
+      </div>
+      <div class="message-input">
+        <label>Message <span class="make-it-red">&ast;</span></label>
+        <textarea name="message" maxlength="1600" rows="1" onInput="auto_height(this)" class="enter-message" required></textarea>
+      </div>
+      <div class="all-email">
+        <img class="icon" src="images/email-and-mail-icon-black-free-png.png">
+        <p class="icon-info">admin@megacom.ca</p>
+      </div>
+      <div>
+        <button type="submit" class="submit">Submit</button>
+      </div>
+    </form>
+
+    <script src="js-code/phone-number-format.js"></script>
+    <script src="js-code/at-sign.js"></script>
+    <script src="js-code/multiline.js"></script>
+
+    <footer class="everything-contact">
+      <div class="contact-title">Contact Us</div>
+      <div class="contact-info">
+        <div class="contact-first-section">
+          <div class="all-location">
+            <img class="icon" src="images/geo-location-icon.jpg">
+            <div class="des-for-contact">
+              <a class="icon-info">10&ndash;235 Macalpine Cres</a>
+              <a class="icon-info">Fort McMurray, AB</a>
+            </div>
+          </div>
+          <div class="all-phone">
+            <img class="icon" src="images/phone-512.webp">
+            <a class="icon-info">(780) 804&ndash;6342</a>
+          </div>          
+        </div>
+        <div class="contact-second-section">
+          <div class="all-email">
+            <img class="icon" src="images/email-and-mail-icon-black-free-png.png">
+            <p class="icon-info">info@megacom.ca</p>
+          </div>
+          <div class="all-clock">
+            <img class="icon" src="images/281668.png">
+            <a class="icon-info">24/7</a>
+          </div>          
+        </div>
+      </div>
+    </footer>
+
+    <footer class="hyperlinks">
+      <div><img class="resize" src="images/megacom_logo.jpg"></div>
+      <div>
+        <a href="https://ca.linkedin.com/company/mega-communications-solutions?trk=similar-pages" target="_blank"><img class="linkedin" src="images/linkedin.png"></a>
+        <a class="utube-container" href="https://www.youtube.com/channel/UCQH0EssBNKNNdZ9hAn8bDHQ" target="_blank"><img class="utube" src="images/youtube.png"></a>
+      </div>
+
+    </footer>
+
+    <footer class="rights-reserved">
+      &#169; 2023, MEGACOM. All Rights Reserved.
+    </footer>
+  </body>
+</html>

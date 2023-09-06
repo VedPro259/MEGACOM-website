@@ -1,0 +1,99 @@
+.hyperlinks{
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  height: 100px; 
+}
+
+.resize{
+  margin-right: 40px; 
+}
+
+.rights-reserved{
+  font-weight: lighter; 
+  height: 50px; 
+  display: flex; 
+  align-items: center; 
+  margin-left: 70px; 
+}
+
+.rights-reserved,
+.everything-contact{
+  font-family: 'Poppins', sans-serif; 
+}
+.linkedin{
+  width: 60px; 
+  height: 60px; 
+  object-fit: cover; 
+  object-position: center; 
+  margin-left: 40px; 
+}
+
+.utube{
+  width: 52px; 
+  height: 52px; 
+  object-fit: cover; 
+  object-position: center; 
+  margin-bottom: 4px; 
+}
+
+.utube:hover,
+.linkedin:hover{
+  opacity: 0.9; 
+}
+
+.everything-contact{
+  margin-top: 30px; 
+}
+
+.contact-title{
+  text-align: center; 
+  font-size: 30px; 
+  font-weight: bold; 
+}
+
+.contact-info{
+  display: flex; 
+  justify-content: space-between; 
+  margin-top: 30px; 
+  margin-left: 70px; 
+  margin-right: 70px; 
+}
+
+.contact-first-section,
+.contact-second-section{
+  line-height: 30px; 
+}
+
+.icon-info{
+  margin-top: -5px; 
+  margin-left: 5px; 
+  font-size: 17px; 
+}
+
+.all-location,
+.all-email,
+.all-phone,
+.all-clock{
+  display: flex; 
+  margin-bottom: 20px; 
+  font-weight: lighter; 
+}
+
+.icon{
+  width: 25px; 
+  height: 25px; 
+  object-fit: cover; 
+  object-position: center; 
+}
+
+.des-for-contact{
+  display: flex; 
+  flex-direction: column; 
+}
+
+@media (max-width: 1004px){
+  .contact-info{
+    flex-direction: column; 
+  }
+}

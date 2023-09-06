@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MEGACOM | About Us | Fiber-Optic Solutions</title>
+    <!--copy and paste-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/header-and-general.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;500;600&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/heading-below-nav.css">
+
+    <style>
+      .second-section{
+        display: flex; 
+      }
+
+      .second-section,
+      .experienced,
+      .fourth-section,
+      .we-believe,
+      .dont-contact-us{
+        font-family: 'Poppins', sans-serif; 
+      }
+      
+      .infrastructure-experts,
+      .premier-network-description{
+        flex: 1; 
+        padding-top: 42px; 
+        padding-bottom: 42px; 
+        display: flex; 
+        padding-left: 51px; 
+        padding-right: 51px; 
+      }
+
+      .infrastructure-experts{
+        font-size: 34px; 
+        font-weight: bold; 
+      }
+
+      .premier-network-description{
+        background-color: rgb(228, 228, 228); 
+        font-weight: lighter; 
+      }
+
+      .third-section{
+        display: flex; 
+      }
+
+      .experienced{
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column;
+        background-color: rgb(58, 58, 58); 
+        color: white; 
+      }
+
+      .experienced,
+      .tower-container{
+        width: 100%; 
+      }
+
+      .tower-container{
+        height: 600px; 
+      }
+
+
+      .telecom-tower-second{
+        width: 100%; 
+        height: 100%;
+        object-fit: cover; 
+        object-position: top; 
+      }
+
+      .experienced-team{
+        font-weight: bold; 
+        font-size: 31px; 
+      }
+
+      .experienced-p1,
+      .experienced-p2{
+        font-size: 17px; 
+        font-weight: lighter; 
+      }
+
+      .experienced-team,
+      .experienced-p1,
+      .experienced-p2{
+        padding-left: 51px;
+        padding-right: 51px; 
+      }
+
+      .fourth-section{
+        display: flex; 
+      }
+
+      .left-side,
+      .right-side{
+        width: 100%; 
+        
+      }
+
+      .left-side{
+        border-right: 1px solid lightgrey; 
+      }
+
+      .mission{
+        font-size: 30px; 
+        font-weight: bold; 
+      }
+      
+      .offer{
+        font-size: 30px; 
+        font-weight: bold; 
+      }
+
+      .bulletpoint{
+        font-size: 17px; 
+        font-weight: lighter; 
+      }
+      .mission-description{
+        font-size: 17px; 
+        font-weight: lighter; 
+      }
+
+      .mission-description,
+      .mission{
+        padding-left: 50px;
+        padding-right: 50px; 
+        margin-top: 45px;  
+      }
+
+      .mission-description{
+        margin-top: -10px; 
+        padding-bottom: 70px; 
+      }
+      .offer,
+      .bulletpoint{
+        padding-left: 50px; 
+        padding-right: 50px; 
+      }
+
+      .bulletpoint{
+        margin-top: -10px; 
+      }
+
+      .fifth-section{
+        position: relative; 
+        left: 0; 
+        right: 0; 
+        height: 303px; 
+        background-image: url("images/parallax.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: inset 40px 40px 40px rgba(0,0,0,0.5);
+      }
+
+      .believe{
+        text-align: center; 
+        backdrop-filter: brightness(50%);
+        width: 100%; 
+        height: 100%;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .we-believe{
+        font-size: 30px; 
+        color: white; 
+        font-weight: bold; 
+      }
+
+      .dont-contact-us{
+        background-color: red; 
+        color: white; 
+        font-size: 17px; 
+        border-style: none; 
+        padding: 8px 15px 8px 15px; 
+        text-decoration: none; 
+        cursor: pointer; 
+        transition: background-color 0.3s, color 0.3s; 
+      }
+
+      .dont-contact-us:hover{
+        background-color: white; 
+        color: black; 
+      }
+
+      @media (max-width: 1004px){
+        .second-section{
+          flex-direction: column;
+        }
+
+        .third-section{
+          flex-direction: column; 
+        }
+
+        .fourth-section{
+          flex-direction: column; 
+        }
+
+        .left-side{
+          border-right-style: none; 
+        }
+
+        .infrastructure-experts,
+        .premier-network-description{
+          padding-left: 20px; 
+          padding-right: 20px; 
+        }
+
+        .experienced-p2{
+          padding-bottom: 20px; 
+        }
+
+        .mission-description{
+          padding-bottom: 10px; 
+        }
+        
+        .right-side{
+          padding-bottom: 20px; 
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+    <nav class="header">
+      <div class="redirect">
+        <a href="index.html">
+          <img class="megacom-logo" src="images/megacom_logo.jpg">
+        </a>
+      </div>
+      <div class="select-one">
+        <div class="tooltip-activate">
+          <img src="images/burger_menu.png" class="menu-above-tooltip">   
+          <div class="each-tooltip-section">   
+            <a class="home-tooltip" href="index.html">Home</a>
+            <a class="about-us-tooltip" href="about_us.html">About Us</a>
+            <a class="services-tooltip" href="services.html">Services</a>
+            <a class="contact-us-tooltip" href="contact-us.html">Contact Us</a>
+          </div>
+        </div>
+        <a class="home" href="index.html">Home</a>
+        <a class="about-us" href="about_us.html">About Us</a>
+        <a class="services" href="services.html">Services</a>
+        <a class="contact-us" href="contact-us.html">Contact Us</a>
+      </div>
+    </nav>
+
+    <script src="js-code/toggle-menu.js"></script>
+
+    <section class="page-services">
+      <div class="overlay"></div>
+      <img class="telecom-tower" src="images/telecom_tower.avif">
+      <div class="the-services">
+        About Us
+      </div>
+    </section>
+
+    <section class="second-section">
+      <div class="infrastructure-experts">
+        Premier Network & Infrastructure Experts in Alberta
+      </div>
+      <div class="premier-network-description">
+        MEGACOM is the premier network and infrastructure expert in Alberta. We cover the entire process from design consultation, installation, and maintenance. Giving our clients the peace of mind and complete satisfaction with fiber optics installation is our ultimate goal. We offer full-service fiber solutions all across Canada.
+      </div>
+    </section>
+
+    <section class="third-section">
+      <div class="tower-container">
+        <img src="images/telecom_tower_second.jpg" class="telecom-tower-second">
+      </div>
+      <div class="experienced">
+        <p class="experienced-team">Experienced Team</p>
+        <p class="experienced-p1">We have been in business since 2011 and have grown into a very experienced team. With over 30 years of experience in the telecommunications field, we have got everything covered.</p>
+        <p class="experienced-p2">We offer all aspects of data and voice setup in residential, commercial, and industrial sites. We have completed work at schools, warehouses and oil sites.</p>
+      </div>
+    </section>
+
+    <section class="fourth-section">
+      <div class="left-side">
+        <p class="mission">Our Mission</p>
+        <p class="mission-description">Our mission is to provide high-caliber fiber connectivity to all the communities and businesses, enabling access to new and evolving technologies. We upgrade ourselves by providing our people with the training, knowledge, and tools to work safely.</p>
+      </div>
+      <div class="right-side">
+        <p class="offer">What We Offer</p>
+        <p class="bulletpoint">&#8226; Internet network infrastructure</p>
+        <p class="bulletpoint">&#8226; Network troubleshooting</p>
+        <p class="bulletpoint">&#8226; Fiber optics</p>
+        <p class="bulletpoint">&#8226; Structured cabling</p>
+        <p class="bulletpoint">&#8226; Antenna installation</p>
+      </div>
+    </section>
+
+    <section class="fifth-section">
+      <div class="believe">
+        <p class="we-believe">We believe that excellent communication is the key to building good relationships.</p>
+        <div>
+          <a href="contact-us.html"><button class="dont-contact-us">Contact Us</button></a>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="everything-contact">
+      <div class="contact-title">Contact Us</div>
+      <div class="contact-info">
+        <div class="contact-first-section">
+          <div class="all-location">
+            <img class="icon" src="images/geo-location-icon.jpg">
+            <div class="des-for-contact">
+              <a class="icon-info">10&ndash;235 Macalpine Cres</a>
+              <a class="icon-info">Fort McMurray, AB</a>
+            </div>
+          </div>
+          <div class="all-phone">
+            <img class="icon" src="images/phone-512.webp">
+            <a class="icon-info">(780) 804&ndash;6342</a>
+          </div>          
+        </div>
+        <div class="contact-second-section">
+          <div class="all-email">
+            <img class="icon" src="images/email-and-mail-icon-black-free-png.png">
+            <p class="icon-info">info@megacom.ca</p>
+          </div>
+          <div class="all-clock">
+            <img class="icon" src="images/281668.png">
+            <a class="icon-info">24/7</a>
+          </div>          
+        </div>
+      </div>
+    </footer>
+
+    <footer class="hyperlinks">
+      <div><img class="resize" src="images/megacom_logo.jpg"></div>
+      <div>
+        <a href="https://ca.linkedin.com/company/mega-communications-solutions?trk=similar-pages" target="_blank"><img class="linkedin" src="images/linkedin.png"></a>
+        <a class="utube-container" href="https://www.youtube.com/channel/UCQH0EssBNKNNdZ9hAn8bDHQ" target="_blank"><img class="utube" src="images/youtube.png"></a>
+      </div>
+
+    </footer>
+
+    <footer class="rights-reserved">
+      &#169; 2023, MEGACOM. All Rights Reserved.
+    </footer>
+  </body>
+</html>
