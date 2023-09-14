@@ -96,4 +96,18 @@
   .contact-info{
     flex-direction: column; 
   }
+
+  .hyperlinks{
+    flex-direction: column; 
+    margin-bottom: 20px; 
+  }
+  
+  .linkedin{
+    margin-left: 0; 
+  }
+
+  .resize{
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
 }
